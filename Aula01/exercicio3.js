@@ -10,8 +10,8 @@ if (valor1 > valor2 ) {
 }
  else {
     if ( valor1 == valor2) {
-    alert(`${valor1} é igual ${valor2}`)
+    alert(`Os valores são iguais!`)
     } else {
-        alert("os valores não são iguais")
+        alert(`${valor2} é maior que ${valor2}`)
     }
 }
