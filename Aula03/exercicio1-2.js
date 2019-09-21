@@ -1,23 +1,23 @@
-/*Complemente o exercício anterior agora informando o NOME e a ALTURA do atleta mais alto. */
+/*1.2 informe também a altura média destes 5 atletas. */
 
 
-let cont, nome, nome2, altura, altura2, media
+let cont, nome, nome2, altura, altura2, media, soma,
 altura2 = 0
 nome2 = ""
 cont = 0
-media = (altura + altura2) /5
-
+soma = 0
 
 while( cont < 5){
     nome = prompt("Digite seu nome:")
     altura = parseInt(prompt("Digite sua altura"))
 
     if (altura > altura2) {
-        nome2 = nome
         altura2 = altura
     }
-
+    soma = soma + altura
     cont++
-}
 
-document.write(`${nome2} é o atleta com a altura mediana de ${media}`)
+}
+media = soma / 5
+
+document.write(`${nome2} é o atleta com a altura ${altura2}. A média de altura é ${media}`)
